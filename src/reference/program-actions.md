@@ -3,7 +3,9 @@ icon: dot
 order: 90
 ---
 
-# Defining Program Actions
+# Program Actions
+
+Commands to define program actions.
 
 ```ruby Runfile
 # --- Action Definition

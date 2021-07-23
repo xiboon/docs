@@ -1,11 +1,10 @@
 ---
 order: 100
-icon: home
-icon: milestone
+icon: mortar-board
 ---
 
 
-# Introduction
+# Philosophy 
 
 **Runfile** lets you create command line applications in a way similar to [Rake][rake], but with the full power of [Docopt][docopt] command line options.
 

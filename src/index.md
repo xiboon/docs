@@ -1,49 +1,68 @@
 ---
-label: Home
+label: Welcome
 icon: home
 ---
 
-# Runfile Documentation
+# Welcome to Runfile
+
+**Runfile** is a command line utility and a Ruby library that helps you create feature-rich command line utilities on a per-project basis.
 
 <object data="/assets/cast.svg" style='width:100%'></object>
 
-## Table of Contents
+[!button variant="info" icon="screen-full" text="Enlarge Demo"](/demo/)
 
-###  [Introduction](Introduction.md)
+If you are familiar with Ruby's [Rake][rake], or with Makefile, then the concept of Runfile should be familiar to you.
 
-What is Runfile and how to use it.
+Under the hood, Runfile makes use of the [Docopt][docopt] library, so that you can define your command's argument in an intuitive way.
 
-### [Runfile Command Reference](Runfile-Command-Reference/)
+For example, the below `usage` methods uses a docopt string, to define a command named `greet` with one required argument (`<name>`) and one optional flag (`[--color]`).
 
-An extensive description explaining how to construct your Runfile.  
-Jump directly to: 
+```ruby Example
+usage  "greet <name> [--color]"
+```
 
-- [Defining Program Details](Runfile-Command-Reference/Defining-Program-Details.md)
-- [Defining Program Actions](Runfile-Command-Reference/Defining-Program-Actions.md)
-- [Output Commands](Runfile-Command-Reference/Output-Commands.md)
-- [Execution Commands](Runfile-Command-Reference/Execution-Commands.md)
-- [Misc Commands](Runfile-Command-Reference/Misc-Commands.md)
+## What is Runfile
 
-### [Runfile Location and Filename](Runfile-Location-and-Filename.md)
+Runfile is:
 
-All about the runfile search path, local and global (named) runfiles.
+1. A command line utility named `run`
+2. A Domain Specific Language (DSL) in the form of Ruby methods, to help you define your program's behavior.
 
-### [Creating Reusable Tasks](Creating-Reusable-Tasks.md)
+A simple Runfile looks like this:
 
-Create tasks you can reuse in more than one project.
+```ruby Runfile
+usage  "greet <name>"
+help   "Say hello to <name>"
+action :greet do |args|
+  say "Hello #{args['<name>']}" 
+end
+```
 
-### [Multiple Project Runfiles](Multiple-Project-Runfiles.md)
+And this Runfile can be executed by running:
 
-For large projects with many Runfile tasks, you can easily separate
-your Runfile to smaller files by using a `.runfile` settings file.
+```shell
+$ run
+Usage:
+  run greet <name>
+  run (-h|--help)
+
+$ run greet you
+Hello you
+```
+
+[!button variant="primary" icon="code-review" text="More Examples"](https://github.com/DannyBen/runfile/tree/master/examples#readme)
 
 
-## Related Gems
+## Installation
 
-### [Premade Tasks: runfile-tasks][1]  
+Runfile comes as a Ruby gem and is primarily designed for Ruby developers.
 
-Easily add common tasks for code testing, gem publishing and more.
+To install Runfile, run:
+
+```shell
+$ gem install runfile
+```
 
 
-
-[1]: https://github.com/DannyBen/runfile-tasks
+[rake]: https://github.com/ruby/rake
+[docopt]: http://docopt.org/

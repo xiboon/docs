@@ -3,7 +3,9 @@ icon: dot
 order: 100
 ---
 
-# Defining Program Details
+# Program Details
+
+Commands to specify information about the program, such as its name and version.
 
 ```ruby Runfile
 title   'My Utilities'
