@@ -1,0 +1,50 @@
+{
+  "input": "src",
+  "output": "docs",
+  "cname": "runfile.dannyb.co",
+
+  "branding": {
+    "title": "Runfile",
+    "label": "v0.11.2"
+  },
+
+  "meta": {
+    "title": " | Runfile"
+  },
+
+  "edit": {
+    "repo": "https://github.com/DannyBen/runfile-book/",
+    "base": "src",
+    "branch": "master"
+  },
+
+  "links": [
+    {
+      "text": "GitHub",
+      "link": "https://github.com/DannyBen/runfile",
+      "target": "blank"
+    },
+    {
+      "text": "Issues",
+      "link": "https://github.com/DannyBen/runfile/issues",
+      "target": "blank"
+    }
+  ],
+
+  "integrations": {
+    "googleAnalytics": {
+      "id": "UA-6696444-17"
+    }
+  },
+
+  "footer": {
+    "copyright": "&copy; Copyright {{ year }}. All rights reserved.",
+    "links": [
+      {
+        "text": "Site Source",
+        "link": "https://github.com/DannyBen/runfile-book",
+        "target": "blank"
+      }
+    ]
+  }
+}
