@@ -50,7 +50,11 @@ $ run greet you
 Hello you
 ```
 
-[!button variant="primary" icon="code-review" text="More Examples"](https://github.com/DannyBen/runfile/tree/master/examples#readme)
+## Examples
+
+The GitHub repository of Runfile contains many documented examples, showing different aspects of its functionality.
+
+[!button variant="primary" icon="code-review" text="Open Examples"](https://github.com/DannyBen/runfile/tree/master/examples#readme)
 
 
 ## Installation

@@ -14,7 +14,7 @@ To use this mechanism, you need to:
 - Delete the `Runfile` file from your project's folder.
 - Create a `.runfile` settings file (YAML) in your project's folder.
 
-## The .runfile Configuration File
+## The `.runfile` configuration file
 
 ```yaml .runfile
 # Runfile settings YAML 

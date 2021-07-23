@@ -54,7 +54,7 @@ end
 ```
 
 
-## Using Named Runfiles
+## Using named Runfiles
 
 ```shell
 $ cd /your/project
