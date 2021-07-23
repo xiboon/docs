@@ -7,11 +7,15 @@ order: 100
 
 Commands to specify information about the program, such as its name and version.
 
+==- :icon-pin: Quick Reference
+
 ```ruby Runfile
 title   'My Utilities'
 summary 'Utilities for my Rails'
 version '0.1.0'
 ```
+
+===
 
 ## `title`
 

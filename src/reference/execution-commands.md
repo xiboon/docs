@@ -7,6 +7,8 @@ order: 70
 
 Commands that can be executed in any action to run external programs in the foreground or background easily.
 
+==- :icon-pin: Quick Reference
+
 ```ruby
 # --- Running commands and services
 
@@ -36,8 +38,9 @@ end
 # or...
 
 Runfile.pid_dir = 'tmp'
-
 ```
+
+===
 
 ## `run`
 

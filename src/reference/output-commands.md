@@ -7,6 +7,8 @@ order: 80
 
 Commands that can be executed in any action to print colorful, indented messages to the console.
 
+==- :icon-pin: Quick Reference
+
 ```ruby
 say 'anything'
 say '!txtred!anything in red'
@@ -17,6 +19,8 @@ say_status :download, 'Download in progress', :txtblu
 word_wrap '  Indent a potentially wrapping line by two spaces'
 say word_wrap '  Indent a potentially wrapping line by two spaces and say it'
 ```
+
+===
 
 All these commands can be used inside your `:action` blocks.
 

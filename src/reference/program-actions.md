@@ -7,6 +7,8 @@ order: 90
 
 Commands to define program actions.
 
+==- :icon-pin: Quick Reference
+
 ```ruby Runfile
 # --- Action Definition
 
@@ -32,6 +34,8 @@ end
 
 endcommand
 ```
+
+===
 
 ## `usage`
 

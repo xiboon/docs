@@ -6,9 +6,12 @@ icon: dot
 
 Additional commands you can use in your action blocks.
 
+==- :icon-pin: Quick Reference
+
 ```ruby
 execute 'other_action'
 ```
+===
 
 ### `execute`
 

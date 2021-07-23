@@ -5,7 +5,9 @@ icon: home
 
 # Welcome to Runfile
 
-**Runfile** is a command line utility and a Ruby library that helps you create feature-rich command line utilities on a per-project basis.
+**Runfile** is a command line utility and a Ruby library that helps you create feature-rich command line utilities for your projects.
+
+You create a `Runfile`, and execute commands with `run command arguments -and --flags`.
 
 <object data="/assets/cast.svg" style='width:100%'></object>
 
