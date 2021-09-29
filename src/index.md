@@ -36,7 +36,7 @@ A simple Runfile looks like this:
 usage  "greet <name>"
 help   "Say hello to <name>"
 action :greet do |args|
-  say "Hello #{args['<name>']}" 
+  puts "Hello #{args['<name>']}" 
 end
 ```
 

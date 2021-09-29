@@ -35,21 +35,28 @@ Runfile created.
 
 $ run
 Usage:
-  run command <arg> [--flag]
+  run hello [<name> --shout]
   run (-h|--help|--version)
 
-$ run command hello
-Command running...
+ $ run hello world -s
+HELLO WORLD
 
 $ cat Runfile
-summary "Application description"
+title   "Greeter"
+summary "A sample Runfile"
 version "0.1.0"
 
-usage  "command <arg> [--flag]"
-help   "Help line for command"
-option "-f --flag", "Help text for option"
-action :command do |args|
-  say "Command running..."
+usage  "hello [<name> --shout]"
+help   "Say hello"
+option "-s --shout", "Greet louder"
+action :hello do |args|
+  message = "Hello #{args['<name>']}"
+
+  if args['--shout']
+    puts message.upcase
+  else
+    puts message
+  end
 end
 ```
 
@@ -63,17 +70,17 @@ $ run new greet
 greet.runfile created.
 
 $ run
-Runfile engine v0.7.0
+Runfile engine v0.x.y
 
 Tip: Type 'run new' or 'run new name' to create a runfile.
-For global access, place named.runfiles in ~/runfile/ or in /etc/runfile/ or 
-anywhere in the PATH.
+For global access, place named.runfiles in ~/runfile/ or in /etc/runfile/.
 
-  run greet ........................ /path/to/file
+  run greet .................................................... /vagrant/temp
+
 
 $ run greet
 Usage:
-  run greet command <arg> [--flag]
+  run greet hello [<name> --shout]
   run greet (-h|--help|--version)
 
 $ cd ~/runfile    # or /etc/runfile
@@ -82,7 +89,7 @@ $ run new hotdog
 hotdog.runfile created.
 
 $ run
-Runfile engine v0.4.0
+Runfile engine v0.x.y
 
 Tip: Type 'run new' or 'run new name' to create a runfile.
 For global access, place named.runfiles in ~/runfile/ or in /etc/runfile/ or 

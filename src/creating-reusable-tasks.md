@@ -25,15 +25,15 @@ module MyCommonTasks
     usage  "cake [--chocolate|--cheese]"
     help   "Make some cake"
     action :cake do |args|
-      say "Making a cake..."
-      say "... a chocolate cake" if args['--chocolate']
-      say "... a cheese cake" if args['--cheese']
+      puts "Making a cake..."
+      puts "... a chocolate cake" if args['--chocolate']
+      puts "... a cheese cake" if args['--cheese']
     end
 
     usage  "faces"
     help   "Make faces"
     action :faces do |args|
-      say "Making faces"
+      puts "Making faces"
     end
 
     endcommand
@@ -57,14 +57,16 @@ version "0.1.0"
 MyCommonTasks.tasks
 
 # continue with regular tasks
-usage  "hello [<name> --color]"
+usage  "hello [<name> --shout]"
 help   "Say hello"
-option "-c --color", "Greet with color"
+option "-s --shout", "Greet louder"
 action :hello do |args|
-  if args['--color']
-    say "!txtgrn!Hello #{args['<name>']}"
+  message = "Hello #{args['<name>']}"
+  
+  if args['--shout']
+    puts message.upcase
   else
-    say "Hello #{args['<name>']}"
+    puts message
   end
 end
 ```
