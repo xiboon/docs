@@ -23,9 +23,11 @@ edit:
 links:
   - text: GitHub
     link: https://github.com/DannyBen/runfile
+    icon: mark-github
     target: blank
   - text: Issues
     link: https://github.com/DannyBen/runfile/issues
+    icon: issue-opened
     target: blank
 
 integrations:
