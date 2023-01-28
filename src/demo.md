@@ -6,4 +6,4 @@ hidden: true
 
 # Demo
 
-<object data="/assets/cast.svg" style='width:100%'></object>
+[![Runfile Demo](/assets/cast.gif)](assets/cast.gif)
