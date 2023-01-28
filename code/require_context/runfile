@@ -1,0 +1,3 @@
+title  'DevOps Tools'
+
+import 'server', cloud: 'azure'

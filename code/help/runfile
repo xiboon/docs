@@ -1,0 +1,15 @@
+title  'FTP Tools'
+
+param 'PATH', 'Path to download/upload'
+
+help   'Download data'
+usage  'download PATH'
+action 'download' do |args|
+  say "Downloading to #{args['PATH']}"
+end
+
+help   'Upload data'
+usage  'upload PATH'
+action 'upload' do |args|
+  say "Uploading from #{args['PATH']}"
+end

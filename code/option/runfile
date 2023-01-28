@@ -1,0 +1,10 @@
+title  'Admin Tools'
+
+usage  'deploy [--build --env ENV]'
+option '--build, -b', 'Build before deploying'
+option '--env, -e ENV', 'Specify environment to deploy to [default: stage]'
+action 'deploy' do |args|
+  env = args['--env']
+  say 'Building...' if args['--build']
+  say "Deploying to #{env}"
+end

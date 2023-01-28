@@ -1,0 +1,17 @@
+$ run --help
+API Tools
+
+Usage:
+  run connect
+  run (--help | -h)
+
+Options:
+  --help, -h
+    Show this message
+
+Environment Variables:
+  API_KEY
+    Your API key
+
+$ run connect
+Please provide an API_KEY

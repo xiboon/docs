@@ -1,0 +1,8 @@
+title  'Developer Tools'
+
+usage  'backup [PATH]'
+param  'PATH', 'Target directory to backup to [default: /tmp]'
+action 'backup' do |args|
+  path = args['PATH'] || '/tmp'
+  puts "Backing up to #{path}"
+end

@@ -1,0 +1,7 @@
+title  'Server Commands'
+
+require_context :cloud, default: 'aws'
+
+action 'deploy' do
+  say "Deploying to #{context[:cloud]}"
+end

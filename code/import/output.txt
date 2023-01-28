@@ -1,0 +1,13 @@
+$ run
+Usage:
+  run server
+  run [COMMAND] (--help | -h)
+
+$ run server
+Usage:
+  run server start
+  run server stop
+  run server (--help | -h)
+
+$ run server start
+Starting server
