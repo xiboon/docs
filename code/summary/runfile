@@ -1,0 +1,6 @@
+title  'Developer Tools'
+summary 'Commands for managing this folder'
+
+action 'commit' do
+  system 'git commit -am "Automatic Commit"'
+end

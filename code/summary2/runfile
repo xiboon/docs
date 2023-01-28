@@ -1,0 +1,6 @@
+title  'Developer Tools'
+import 'server'
+
+action 'commit' do
+  puts 'git commit -am "Automatic Commit"'
+end

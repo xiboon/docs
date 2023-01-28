@@ -1,0 +1,15 @@
+$ run --help
+Developer Tools
+
+Usage:
+  run commit
+  run server
+  run [COMMAND] (--help | -h)
+
+Commands:
+  server
+    Server amanagement commands
+
+Options:
+  --help, -h
+    Show this message

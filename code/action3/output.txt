@@ -1,0 +1,21 @@
+$ run
+Starting server
+
+$ run -h
+Server Tools
+
+Usage:
+  run
+  run stop
+  run (--help | -h)
+
+Commands:
+  (default)
+    Start the server
+
+  stop
+    Stop the server
+
+Options:
+  --help, -h
+    Show this message

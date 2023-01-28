@@ -1,0 +1,13 @@
+$ run --help
+Developer Tools
+
+Usage:
+  run backup [PATH --incremental]
+  run (--help | -h)
+
+Options:
+  --incremental, -i
+    Perform incremental backup only
+
+  --help, -h
+    Show this message

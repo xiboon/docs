@@ -1,0 +1,11 @@
+title  'Server Tools'
+
+help   'Start the server'
+action do
+  puts "Starting server"
+end
+
+help   'Stop the server'
+action 'stop' do
+  puts "Stopping server"
+end

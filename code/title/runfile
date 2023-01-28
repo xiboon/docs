@@ -1,0 +1,5 @@
+title  'Developer Tools'
+
+action 'commit' do
+  system 'git commit -am "Automatic Commit"'
+end

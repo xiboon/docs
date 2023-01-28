@@ -1,0 +1,10 @@
+$ run --help
+Developer Tools
+
+Usage:
+  run commit
+  run (--help | -h)
+
+Options:
+  --help, -h
+    Show this message
