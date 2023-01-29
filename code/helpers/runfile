@@ -1,0 +1,17 @@
+title  'API Tools'
+
+action 'download' do
+  verify_api_key
+  say "Downloading"
+end
+
+action 'upload' do
+  verify_api_key
+  say "Uploading"
+end
+
+helpers do
+  def verify_api_key
+    abort 'Please set API_KEY' unless ENV['API_KEY']
+  end
+end

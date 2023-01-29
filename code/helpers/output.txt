@@ -1,0 +1,11 @@
+$ run
+Usage:
+  run download
+  run upload
+  run (--help | -h)
+
+$ run download
+Please set API_KEY
+
+$ API_KEY=123 run download
+Downloading

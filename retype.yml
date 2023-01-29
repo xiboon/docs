@@ -10,7 +10,7 @@ server:
 branding:
   logo: assets/logo.svg
   logoDark: assets/logo-dark.svg
-  label: v0.12.0
+  label: v1.0.0
 
 meta:
   title: " | Runfile"
@@ -28,6 +28,10 @@ links:
   - text: Issues
     link: https://github.com/DannyBen/runfile/issues
     icon: issue-opened
+    target: blank
+  - text: Examples
+    link: https://github.com/DannyBen/runfile/tree/master/examples#readme
+    icon: code-review
     target: blank
 
 integrations:

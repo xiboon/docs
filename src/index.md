@@ -1,5 +1,5 @@
 ---
-label: Welcome
+label: Overview
 icon: home
 ---
 
@@ -8,7 +8,7 @@ icon: home
 **Runfile** is a command line utility and a Ruby library that helps you create
 feature-rich command line utilities for your projects.
 
-You create a `Runfile`, and execute commands with `run command
+You create a `runfile`, and execute commands with `run command
 arguments -and --flags`.
 
 [![Runfile Demo](/assets/cast.gif)](/demo/)
@@ -25,8 +25,8 @@ For example, the below `usage` methods uses a docopt string, to define a command
 named `greet` with one required argument (`NAME`) and one optional flag (`
 [--color]`).
 
-```ruby Example
-usage  "greet NAME [--color]"
+```ruby
+usage 'greet NAME [--color]'
 ```
 
 ## What is Runfile
@@ -39,7 +39,7 @@ Runfile is:
 
 A simple runfile looks like this:
 
-```ruby runfile
+```ruby
 usage  "greet NAME"
 help   "Say hello"
 action :greet do |args|
@@ -89,6 +89,15 @@ To install Runfile, run:
 ```shell
 $ gem install runfile
 ```
+
+## Quick Start
+
+```shell
+$ run new        # create a new runfile
+$ run --help     # show the usage patterns
+$ vi runfile     # edit the runfile
+```
+
 
 
 [rake]: https://github.com/ruby/rake

@@ -1,0 +1,21 @@
+$ run --help
+Admin Tools
+
+Usage:
+  run ping
+  run server
+  run [COMMAND] (--help | -h)
+
+Commands:
+  server
+    Server commands
+
+Options:
+  --help, -h
+    Show this message
+
+Shortcuts:
+  s   server start
+
+$ run s
+starting server

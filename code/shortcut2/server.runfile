@@ -1,0 +1,9 @@
+summary  'Server commands'
+
+action 'start' do
+  say 'starting server'
+end
+
+action 'stop' do
+  say 'stopping server'
+end
