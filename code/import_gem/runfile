@@ -1,3 +1,0 @@
-title  'Dev Tools'
-
-import_gem 'runfile-tasks/docker', image: 'my/image', version: '1.2.3'

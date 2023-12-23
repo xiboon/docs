@@ -1,8 +1,0 @@
-$ run
-Usage:
-  run commit
-  run (--help | -h)
-  run --version
-
-$ run --version
-1.0.0

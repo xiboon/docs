@@ -1,5 +1,0 @@
-title  'Connect to SSH'
-
-action do
-  say 'Connecting to ssh'
-end

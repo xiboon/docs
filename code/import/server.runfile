@@ -1,9 +1,0 @@
-title  'Server Commands'
-
-action 'start' do
-  say 'Starting server'
-end
-
-action 'stop' do
-  say 'Starting server'
-end

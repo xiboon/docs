@@ -1,9 +1,0 @@
-title  'API Tools'
-
-env_var 'API_KEY', 'Your API key'
-action 'connect' do
-  api_key = ENV['API_KEY']
-  abort 'Please provide an API_KEY' unless api_key
-  
-  say 'Connecting...'
-end

@@ -1,8 +1,0 @@
-title  'Admin Tools'
-import 'server'
-
-shortcut 's', 'server start'
-
-action 'ping' do |args|
-  say 'PONG'
-end

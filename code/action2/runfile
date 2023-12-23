@@ -1,6 +1,0 @@
-title  'Developer Tools'
-
-usage  '(backup | b) [--force --full]'
-action 'backup', 'b' do |args|
-  p args
-end

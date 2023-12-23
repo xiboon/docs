@@ -1,2 +1,0 @@
-$ run backup --force
-{"backup"=>true, "--force"=>true, "--full"=>false, "--help"=>false}

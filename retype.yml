@@ -13,10 +13,10 @@ branding:
   label: v1.0.2
 
 meta:
-  title: " | Runfile"
+  title: " | TurtleMC"
 
 edit:
-  repo: https://github.com/DannyBen/runfile-book/
+  repo: https://github.com/DannyBen/wpiszwlasne/
   base: src
   branch: master
 

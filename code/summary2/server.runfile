@@ -1,6 +1,0 @@
-title   'Server Commands'
-summary 'Server amanagement commands'
-
-action 'start' do
-  puts 'Starting server'
-end

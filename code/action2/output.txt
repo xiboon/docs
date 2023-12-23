@@ -1,8 +1,0 @@
-$ run
-Usage:
-  run (backup | b) [--force --full]
-  run (--help | -h)
-
-$ run b
-{"backup"=>false, "b"=>true, "--force"=>false, "--full"=>false, "--help"=>false}
-
